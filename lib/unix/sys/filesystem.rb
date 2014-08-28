@@ -562,7 +562,7 @@ module Sys
             val = mp
             break
           end
-        rescue Errno::EPERM
+        rescue SystemCallError
         end
       end
 
